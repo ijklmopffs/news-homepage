@@ -215,3 +215,26 @@ button:hover {
     margin-top: -30px;
   }
 }
+@media screen and (max-width: 400px) {
+  body {
+    margin-left: 0;
+  }
+  img {
+    width: 80%;
+  }
+  .second {
+    width: 70%;
+  }
+  .title-text p {
+    width: 70%;
+  }
+  .main {
+    width: 100%;
+  }
+  .first {
+    width: 352px;
+  }
+  .title {
+    margin-right: 40px;
+  }
+}
