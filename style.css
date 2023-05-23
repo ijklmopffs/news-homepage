@@ -26,6 +26,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+  width: 100%;
 }
 .title {
   font-size: 40px;
@@ -46,6 +47,13 @@ button {
   line-height: 1.5;
   letter-spacing: 3px;
   margin-top: 10px;
+  cursor: pointer;
+}
+.last h3 {
+  cursor: pointer;
+}
+.last h3:hover {
+  color: hsl(5, 85%, 63%);
 }
 button:hover {
   background-color: hsl(240, 100%, 5%);
@@ -72,6 +80,18 @@ button:hover {
 .third-child {
   margin-top: 30px;
 }
+.first-child,
+.second-child,
+.third-child h2 {
+  cursor: pointer;
+}
+
+.first-child h2:hover,
+.second-child h2:hover,
+.third-child h2:hover {
+  color: hsl(35, 77%, 62%);
+}
+
 .last {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -119,7 +139,7 @@ button:hover {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .navbar {
     width: 100%;
   }
@@ -248,5 +268,10 @@ button:hover {
   }
   .links {
     margin-inline-end: 0;
+  }
+}
+@media (max-width: 820px) {
+  .list {
+    width: 240px;
   }
 }
