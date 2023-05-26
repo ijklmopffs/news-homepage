@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-NN7Ckqja4NlEtnKOZirXsCv2+p2Jy7Asgs1yJ3aK2KfZJOZy8+nR5opvY+Ku1yIb" crossorigin="anonymous" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -21,17 +23,23 @@
     <title>Frontend Mentor | News homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
+
+    <div id="overlay">
+      <div id="subscription-form">
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="email-form" action="#">
+          <div class="close-btn" onclick="closeForm()">&times;</div> <!-- Close button -->
+          <div class="input-wrapper">
+            <input type="email" id="email-input" placeholder="Enter your email" required>
+            <i class="fa fa-envelope"></i>
+          </div>
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+    
     <nav>
       <div class="navbar">
         <img src="./assets/images/logo.svg" alt="" class="logo" />
@@ -134,5 +142,6 @@
       >. Coded by <a href="https://github.com/ijklmopffs">Nuel Elekwachi</a>.
     </div>
     <script src="./main.js"></script>
+    <script src="./server.js"></script>
   </body>
 </html>
